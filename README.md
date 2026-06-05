@@ -1,23 +1,29 @@
-# Liquorix Package
+[update-readmes]   Mode: rewrite — migrating to template structure...
+# liquorix-package
 
-[![license](https://img.shields.io/github/license/damentz/liquorix-package.svg)](LICENSE)
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/liquorix-package)
 
-This repository contains the Debian package to build Liquorix for both Debian and Ubuntu, and scripts for Debian, Ubuntu, and Arch Linux.
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
-## Prerequisites
+## Architecture
 
-The following software must be installed.
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
 
-1. Docker
-2. GnuPG
+## Install
 
-GnuPG must be configured with a `default-key` line defined in `~/.gnupg/gpg.conf`.  Consult the GnuPG manual for more information if you're unsure what to put here.  But if you're creating a temporary signing key for the purposes of building, follow these steps:
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
 
-1. Execute `gpg --full-gen-key` and follow prompts
-2. Run `gpg --list-secret-keys` to produce a list of keys you own the secrets to
-3. Create `~/.gnupg/gpg.conf` and add `default-key EXAMPLE1234...`, where the example is your key from the previous output
+```bash
+git clone https://github.com/Interested-Deving-1896/liquorix-package.git
+cd liquorix-package
+```
 
 ## Usage
+
 
 ### Bootstrap Docker Images
 
@@ -59,6 +65,50 @@ find scripts/ -type f | xargs grep -H 'dpkg-buildpackage'
 
 If signing is desired, make sure to update the changelog with `dch -i --auto-nmu` and set the author to match your signing key you set up with GnuPG.
 
-## Contributing
+## Configuration
 
-PRs accepted.
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
+
+## CI
+
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
+
+## Mirror chain
+
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/liquorix-package`](https://github.com/Interested-Deving-1896/liquorix-package) and mirrored through:
+
+```
+Interested-Deving-1896/liquorix-package  ──►  OpenOS-Project-OSP/liquorix-package  ──►  OpenOS-Project-Ecosystem-OOC/liquorix-package
+```
+
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
+
+## Contributors
+
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
+
+## Origins
+
+<!-- AI:start:origins -->
+_Original project — no upstream fork._
+<!-- AI:end:origins -->
+
+## Resources
+
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
+
+## License
+
+<!-- AI:start:license -->
+[GPL-2.0](https://github.com/Interested-Deving-1896/liquorix-package/blob/6.15/master/LICENSE) © 2026 [Interested-Deving-1896](https://github.com/Interested-Deving-1896)
+<!-- AI:end:license -->
